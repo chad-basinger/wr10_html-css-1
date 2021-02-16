@@ -3,33 +3,61 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="/reset.css">
         <link rel="stylesheet" href="/styles.css">
+        
         <title>Our HTML Day 2 Lecture</title>
+
+        <!-- <style>
+            p {
+                color: blue;
+            }
+
+            #site-header {
+                font-size: 55px;
+                margin-left: 50px;
+            }
+
+            .site-nav-item {
+                font-style: italic;
+            }
+        </style> -->
     </head>
     <body>
+        <!--This is a comment that won't be read by the browser, but I can see it in the source-->
         <header>
-            <h1>
+            <h1 id="site-header">
                 Our HTML Day 2 Lecture
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="https://www.google.com">Google in same tab</a></li>
-                    <li><a href="https://www.bing.com" target="_blank">Bing in new tab</a></li>
+                    <li class="site-nav-item"><a href="#">Home</a></li>
+                    <li class="site-nav-item"><a href="#">About</a></li>
+                    <li class="site-nav-item"><a href="https://www.google.com">Google in same tab</a></li>
+                    <!--The target attribute below causes a new tab to be opened-->
+                    <li class="site-nav-item"><a href="https://www.bing.com" target="_blank">Bing in new tab</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
-                <h2>Sample Article</h2>
+                <header>
+                <h2 style="color: rgb(125, 180,125); background-color: yellow;">Sample Article</h2>
                 <p>This is our article text. This can go on forever, and ever, and ever.</p>
+                </header>
             </article>
+
             <section>
                 <h3>Subscribe to our newsletter!</h3>
                 <input type="text"/><button>Subscribe</button>
             </section>
 
+            <img src="https://image.shutterstock.com/shutterstock/photos/1510641710/display_1500/stock-photo-british-shorthair-kitten-of-silver-color-on-blue-and-gray-backgrounds-1510641710.jpg" alt="cat" />
+
+            <section class="size-units-ex">
+                <p>I am in size units ex</p>
+            </section>
         </main>
     </body>
 </html>
